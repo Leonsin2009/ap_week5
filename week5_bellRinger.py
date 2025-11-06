@@ -88,16 +88,30 @@ split_letter_a = print(together.split('a'))
 
 # Replacing Words:
 # Modify the sentence: "Life is what happens when you are busy making other plans."
+sentence = "Life is what happens when you are busy making other plans."
+
 # a. Replace "busy" with "distracted".
 # b. Replace "plans" with "mistakes".
+busy_replaced = print(sentence.replace("busy", "distracted").replace("plans", "mistakes"))
+
+
 
 # Problem Set 4: String Properties and Advanced Operations
 # Repetition:
 # Concatenate the word "Iteration" 7 times.
+repeated_word = print("Interation " * 7)
 
 # Word Search:
 # Check if the word "moonlight" appears in the quote: "With freedom, books, flowers, and the moon, who could not be happy? - Oscar Wilde"
+word = "freedon"
+quote = "With freedom, books, flowers, and the moon, who could not be happy? - Oscar Wilde"
+word_in_quote = print(word in quote)
+
+
 
 # Length and Count:
 # a. Calculate the number of characters (including spaces and punctuation) in the word/phrase: "Supercalifragilisticexpialidocious".
+phrase = "Supercalifragilisticexpialidocious"
+length_of_phrase = print(len(phrase))
 # b. Count the number of times the letter 'i' appears in the same word/phrase.
+count_of_i = print(phrase.count('i'))
