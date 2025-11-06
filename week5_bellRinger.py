@@ -21,10 +21,18 @@ last_a_index = print(magic.rindex('a'))
 alphabet = 'abcdefghijklmnopqrstuvwxyz'
 
 # a. Extract the letters 'hij'.
-hij_char = print(alphabet)
-# b. Extract every second letter starting from 'a' to 'm'.
-# c. Reverse the entire string using slicing.
+# hij = print(alphabet[7:10])
+hij = print(alphabet.index('hij'))
+hij2 = print(alphabet[7:10])
 
+# b. Extract every second letter starting from 'a' to 'm'.
+sec_letter = print(alphabet[0:13:2])
+
+# c. Reverse the entire string using slicing.
+reversed_alphabet = print(alphabet[::-1])
+
+I_have_a_dream = "When we allow freedom to ring—when we let it ring from every city and every hamlet, from every state and every city, we will be able to speed up that day when all of God’s children, black men and white men, Jews and Gentiles, Protestants and Catholics, will be able to join hands and sing in the words of the old Negro spiritual, “Free at last, Free at last, Great God a-mighty, We are free at last."
+reversed_I_have_a_dream = print(I_have_a_dream[::-1])
 # Problem Set 2: Extracting Information
 # From Descriptions:
 # Extract the name of the famous personality from the quote "Ask not what your country can do for you — ask what you can do for your country. - John F. Kennedy"
