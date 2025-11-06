@@ -16,6 +16,8 @@ first_c_index = print(magic.index('c'))
 last_a_index = print(magic.rindex('a'))
 #rindex finds the last occurance of a specific character
 
+
+
 # Advanced Slicing:
 # Given the string alphabet = 'abcdefghijklmnopqrstuvwxyz',
 alphabet = 'abcdefghijklmnopqrstuvwxyz'
@@ -33,6 +35,9 @@ reversed_alphabet = print(alphabet[::-1])
 
 I_have_a_dream = "When we allow freedom to ring—when we let it ring from every city and every hamlet, from every state and every city, we will be able to speed up that day when all of God’s children, black men and white men, Jews and Gentiles, Protestants and Catholics, will be able to join hands and sing in the words of the old Negro spiritual, “Free at last, Free at last, Great God a-mighty, We are free at last."
 reversed_I_have_a_dream = print(I_have_a_dream[::-1])
+
+
+
 # Problem Set 2: Extracting Information
 # From Descriptions:
 # Extract the name of the famous personality from the quote "Ask not what your country can do for you — ask what you can do for your country. - John F. Kennedy"
@@ -42,11 +47,27 @@ john = print(famous_quote.find("John F. Kennedy"))
 extracted_name = print(famous_quote[83:])
 
 
+
 # Manipulating Words:
 # Given the string info = "Python is fun. Fun is good. Good is subjective.",
+info = "Python is fun. Fun is good. Good is subjective."
+
 # a. Extract the word 'subjective' without knowing its exact position.
-# b. Extract every third word.
+subjective = print(info.find("subjective"))
+word = print(info[36:])
+
+# b. Extract every third letter.
+third_letter = print(info[0::3])   # Output: Ph  nF  o oisjte
+
 # c. Reverse the positions of the words, but keep the characters in each word in the same order.
+words = info.split()
+print(words)    # Output: ['Python', 'is', 'fun.', 'Fun', 'is', 'good.', 'Good', 'is', 'subjective.']
+
+reversed_words = ' '.join(reversed(words))  # Reverse the list of words
+
+print(reversed_words)   # Output: subjective. is Good good. is Fun fun. is Python
+
+
 
 # Problem Set 3: String Methods
 # Upper & Lower:
